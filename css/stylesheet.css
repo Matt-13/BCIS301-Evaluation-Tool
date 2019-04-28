@@ -1,0 +1,19 @@
+body {
+    padding: 2em;
+}
+
+h2 {
+    text-align: center;
+}
+
+.spacing {
+    height: 3em;
+}
+
+#calc-tool {
+    padding: 2em;
+}
+
+input[type="checkbox"] {
+  zoom: 1.25;
+}

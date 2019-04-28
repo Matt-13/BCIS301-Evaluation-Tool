@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class="container-fluid" id="main-wrapper">
+            <div class="container" id="calc-tool-wrapper">
+                <h2>Evaluation Tool for IT Project Success and Failure</h2>
+                <div class="spacing">
+                </div>
+                <div class="container bg-danger rounded text-white" id="calc-tool">
+                    <h4>Select a Failure Criteria</h4>
+                    <br>
+                    <form id="calc">
+                        <input type="checkbox" name="top_management"></input>
+                        Top Management
+                        <br>
+                        <br>
+                        <input type="checkbox" name="project_management"></input>
+                        Project Management
+                        <br>
+                        <br>
+                        <input type="checkbox" name="staff_skillset"></input>
+                        Staff and Skillset
+                        <br>
+                        <br>
+                        <input type="checkbox" name="process_framework"></input>
+                        Process and Framework
+                        <br>
+                        <br>
+                        <input type="checkbox" name="technological"></input>
+                        Technological
+                        <br>
+                        <br>
+                        <input type="checkbox" name="organizational"></input>
+                        Organizational
+                        <br>
+                        <br>
+                        <input type="checkbox" name="user_usecase"></input>
+                        User and Use Case
+                        <br>
+                        <br>
+                        <input type="checkbox" name="complexity_size"></input>
+                        Complexity and Size
+                        <br>
+                        <br>
+                    </form>
+                </div>
+                <div class="spacing">
+                </div>
+                <div class="container bg-success rounded text-white" id="calc-tool">
+                    <h4>Select a Success Criteria</h4>
+                    <br>
+                    <form id="calc">
+                        <input type="checkbox" name="top_management"></input>
+                        Top Management
+                        <br>
+                        <br>
+                        <input type="checkbox" name="project_management"></input>
+                        Project Management
+                        <br>
+                        <br>
+                        <input type="checkbox" name="staff_skillset"></input>
+                        Staff and Skillset
+                        <br>
+                        <br>
+                        <input type="checkbox" name="process_framework"></input>
+                        Process and Framework
+                        <br>
+                        <br>
+                        <input type="checkbox" name="technological"></input>
+                        Technological
+                        <br>
+                        <br>
+                        <input type="checkbox" name="organizational"></input>
+                        Organizational
+                        <br>
+                        <br>
+                        <input type="checkbox" name="user_usecase"></input>
+                        User and Use Case
+                        <br>
+                        <br>
+                        <input type="checkbox" name="complexity_size"></input>
+                        Complexity and Size
+                        <br>
+                        <br>
+                    </form>
+                </div>
+                <div class="spacing">
+                </div>
+                <div class="submit">
+                    <button class="btn btn-primary">Calculate Project Chance of Success/Failure</button>
+                </div>
+                <div class="spacing">
+                </div>
+                <div class="container alert alert-primary" id="calc-results">
+                    <h3>Project has a 0% chance of failure</h3>
+                    <h3>Project has a 0% chance of success</h3>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/calc.js"></script>
+</html>
