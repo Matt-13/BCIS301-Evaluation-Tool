@@ -14,38 +14,57 @@
                 </div>
                 <div class="container bg-danger rounded text-white" id="calc-tool">
                     <h4>Select a Failure Criteria</h4>
+                    <p>Then give it a rating out of 10 for your project.</p>
+                    <i>10 being highly likely to fail, 1 being unlikely to fail</i>
+                    <br>
                     <br>
                     <form id="calc">
-                        <input type="checkbox" name="top_management"></input>
+                        <input type="checkbox" id="tmc" name="top_management"></input>
                         Top Management
                         <br>
+                        <input type="number" id="tmi" name="top_management_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
-                        <input type="checkbox" name="project_management"></input>
+                        <br>
+                        <input type="checkbox" id="pmc" name="project_management"></input>
                         Project Management
                         <br>
+                        <input type="number" id="pmi" name="project_management_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
-                        <input type="checkbox" name="staff_skillset"></input>
+                        <br>
+                        <input type="checkbox" id="ssc" name="staff_skillset"></input>
                         Staff and Skillset
                         <br>
+                        <input type="number" id="ssi" name="staff_skillset_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
-                        <input type="checkbox" name="process_framework"></input>
+                        <br>
+                        <input type="checkbox" id="pfc" name="process_framework"></input>
                         Process and Framework
                         <br>
+                        <input type="number" id="pfi" name="process_framework_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
-                        <input type="checkbox" name="technological"></input>
+                        <br>
+                        <input type="checkbox" id="thc" name="technological"></input>
                         Technological
                         <br>
+                        <input type="number" id="thi" name="technological_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
-                        <input type="checkbox" name="organizational"></input>
+                        <br>
+                        <input type="checkbox" id="ozc" name="organizational"></input>
                         Organizational
                         <br>
+                        <input type="number" id="ozi" name="organizational_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
-                        <input type="checkbox" name="user_usecase"></input>
+                        <br>
+                        <input type="checkbox" id="uuc" name="user_usecase"></input>
                         User and Use Case
                         <br>
+                        <input type="number" id="uui" name="user_usecase_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
-                        <input type="checkbox" name="complexity_size"></input>
+                        <br>
+                        <input type="checkbox" id="cxc" name="complexity_size"></input>
                         Complexity and Size
+                        <br>
+                        <input type="number" id="cxi" name="complexity_size_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
                     </form>
@@ -53,39 +72,58 @@
                 <div class="spacing">
                 </div>
                 <div class="container bg-success rounded text-white" id="calc-tool">
-                    <h4>Select a Success Criteria</h4>
+                    <h4>Select a Success Solution</h4>
+                    <p>Then give it a rating out of 10 for your project.</p>
+                    <i>10 being highly likely to succeed, 1 being unlikely to succeed</i>
+                    <br>
                     <br>
                     <form id="calc">
-                        <input type="checkbox" name="top_management"></input>
-                        Top Management
+                        <input type="checkbox" id="ecc" name="effective_communication"></input>
+                        Effective Communication.
+                        <br>
+                        <input type="number" id="eci" name="effective_communication_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
-                        <input type="checkbox" name="project_management"></input>
-                        Project Management
+                        <input type="checkbox" id="ifc" name="improved_framework"></input>
+                        Use an improved ITIL/IS Framework or Service.
+                        <br>
+                        <input type="number" id="ifi" name="improved_framework_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
-                        <input type="checkbox" name="staff_skillset"></input>
-                        Staff and Skillset
+                        <input type="checkbox" id="osc" name="org_skills"></input>
+                        Organizational Skills
+                        <br>
+                        <input type="number" id="osi" name="org_skills_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
-                        <input type="checkbox" name="process_framework"></input>
-                        Process and Framework
+                        <input type="checkbox" id="emc" name="effective_management"></input>
+                        Effective Management
+                        <br>
+                        <input type="number" id="emi" name="effective_management_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
-                        <input type="checkbox" name="technological"></input>
-                        Technological
+                        <input type="checkbox" id="itc" name="increased_training"></input>
+                        Increased Staff Training and Knowledge
+                        <br>
+                        <input type="number" id="iti" name="increased_training_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
-                        <input type="checkbox" name="organizational"></input>
-                        Organizational
+                        <input type="checkbox" id="ebc" name="effective_budgeting"></input>
+                        Effective Budgeting
+                        <br>
+                        <input type="number" id="ebi" name="effective_budgeting_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
-                        <input type="checkbox" name="user_usecase"></input>
-                        User and Use Case
+                        <input type="checkbox" id="isic" name="increased_stk_involvement"></input>
+                        Increased Stakeholder Involvement
+                        <br>
+                        <input type="number" id="isii" name="increased_stk_involvement_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
-                        <input type="checkbox" name="complexity_size"></input>
-                        Complexity and Size
+                        <input type="checkbox" id="iuic" name="increased_usr_involvement"></input>
+                        Increased User Involvement
+                        <br>
+                        <input type="number" id="iuii" name="increased_usr_involvement_input" min="1" max="10" step="1" placeholder="1"> / 10</input>
                         <br>
                         <br>
                     </form>
