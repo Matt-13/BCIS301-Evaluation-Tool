@@ -47,8 +47,8 @@ function calc() {
 }
 
 function outputToScreen() {
-    document.getElementById("failure_output").textContent = `Project has a ${failure_chance}% chance of Failure`
-    document.getElementById("success_output").textContent = `Project has a ${success_chance}% chance of Success`
+    document.getElementById("failure_output").textContent = `Your Project has a ${failure_chance}% chance of Failure`
+    document.getElementById("success_output").textContent = `Your Project has a ${success_chance}% chance of Success`
 }
 
 function calcStart() {
