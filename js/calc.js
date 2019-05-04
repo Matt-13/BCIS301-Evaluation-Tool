@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // Failure Factor Constants
 
 const prj_mgmt = 31.60;
@@ -26,12 +27,12 @@ const in_stf_tr = 3.92;
 failure_elements = {
     "tmi": top_mgmt, "pmi": prj_mgmt, "ssi": stf_skil, "pfi": prc_frmk,
     "thi": tch_impl, "ozi": org_govt, "uui": usr_usec, "cxi": com_size
-}
+};
 
 success_elements = {
     "eci": eff_comm, "ifi": imp_fwrk, "osi": org_skls, "emi": eff_mgnt,
     "iti": in_stf_tr, "ebi": eff_bdgt, "isii": in_stk_in, "iuii": in_usr_in
-}
+};
 
 function calc() {
     failure_chance = 0;
