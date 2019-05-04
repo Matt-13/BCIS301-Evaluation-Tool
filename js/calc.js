@@ -54,7 +54,8 @@ function calc() {
     for(var i in (failure_elements)) {
         failure_chance += failure_elements[i] * (document.getElementById(i).value / 10);
     }
-    console.log(failure_chance)
+    failure_chance = parseFloat(failure_chance).toFixed(2);
+    console.log(failure_chance);
 }
 
 function calcStart() {
