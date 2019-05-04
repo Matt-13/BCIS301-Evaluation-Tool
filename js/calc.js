@@ -33,9 +33,6 @@ success_elements = {
     "iti": in_stf_tr, "ebi": eff_bdgt, "isii": in_stk_in, "iuii": in_usr_in
 }
 
-failure_chance = 0;
-success_chance = 0;
-
 function calc() {
     failure_chance = 0;
     success_chance = 0;
@@ -47,13 +44,17 @@ function calc() {
     }
     failure_chance = parseFloat(failure_chance).toFixed(2);
     success_chance = parseFloat(success_chance).toFixed(2);
-    console.log(failure_chance);
-    console.log(success_chance);
+}
+
+function outputToScreen() {
+    document.getElementById("failure_output").textContent = `Project has a ${failure_chance}% chance of Failure`
+    document.getElementById("success_output").textContent = `Project has a ${success_chance}% chance of Success`
 }
 
 function calcStart() {
     if (checkIfValuesPresent()) {
         calc()
+        outputToScreen()
     } else {
         window.alert("Values are Missing or Invalid in the textboxes.\nPlease double check your input.")
     }
