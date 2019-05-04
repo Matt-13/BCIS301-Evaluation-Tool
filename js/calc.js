@@ -81,3 +81,16 @@ function checkIfValuesPresent() {
     // Good Day Scenario
     return true;
 }
+
+function randomize() {
+    for(var i in (failure_elements)) {
+        document.getElementById(i).value = getRandomInt(10)
+    }
+    for(var i in (success_elements)) {
+        document.getElementById(i).value = getRandomInt(10)
+    }
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
