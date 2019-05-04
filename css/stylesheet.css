@@ -17,3 +17,7 @@ h2 {
 input[type="checkbox"] {
   zoom: 1.25;
 }
+
+.center {
+    text-align: center;
+}
