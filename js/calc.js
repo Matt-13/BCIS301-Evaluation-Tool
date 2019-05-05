@@ -46,6 +46,7 @@ function calc() {
     failure_chance = parseFloat(failure_chance).toFixed(2);
     success_chance = parseFloat(success_chance).toFixed(2);
     success_chance_failure = 100 - success_chance;
+    success_chance_failure = parseFloat(success_chance_failure).toFixed(2);
 }
 
 function outputToScreen() {
