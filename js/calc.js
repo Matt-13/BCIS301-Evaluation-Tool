@@ -45,11 +45,13 @@ function calc() {
     }
     failure_chance = parseFloat(failure_chance).toFixed(2);
     success_chance = parseFloat(success_chance).toFixed(2);
+    success_chance_failure = 100 - success_chance;
 }
 
 function outputToScreen() {
     document.getElementById("failure_output").textContent = `Your Project has a ${failure_chance}% chance of Failure`;
-    document.getElementById("success_output").textContent = `Your Project has a ${success_chance}% chance of Success`;
+    document.getElementById("success_output").textContent = `Your Project has a ${success_chance}% chance of Success
+                                                             and a ${success_chance_failure}% chance of Failure`;
 }
 
 offender = '';
