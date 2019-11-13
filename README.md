@@ -1,6 +1,6 @@
 # BCIS301-Evaluation-Tool
 
-// This assignment got 90/100. Feel free to use as an example.
+## This assignment got 90/100. Feel free to use as an example.
 
 Project Success and Failure Evaluation Tool
 
